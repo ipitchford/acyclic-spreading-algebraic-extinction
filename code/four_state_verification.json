@@ -1,0 +1,222 @@
+{
+ "A_structure": {
+  "V=12": {
+   "A_homogeneous_linear_in_p": true,
+   "Aii_face_degree_in_s": 1,
+   "P": [
+    3,
+    4
+   ],
+   "face_is_equilibria": true,
+   "mass_conserved": true,
+   "row1_offdiag_zero": true
+  },
+  "V=123": {
+   "A_homogeneous_linear_in_p": true,
+   "A_lower_triangular": true,
+   "P": [
+    4
+   ],
+   "diag_nonpositive_form": true,
+   "face_is_equilibria": true,
+   "mass_conserved": true,
+   "row1_offdiag_zero": true
+  },
+  "V=13": {
+   "A_homogeneous_linear_in_p": true,
+   "Aii_face_degree_in_s": 1,
+   "P": [
+    2,
+    4
+   ],
+   "face_is_equilibria": true,
+   "mass_conserved": true,
+   "row1_offdiag_zero": true
+  },
+  "V=23": {
+   "A_homogeneous_linear_in_p": true,
+   "P": [
+    1,
+    4
+   ],
+   "det_face_degree_in_s": 2,
+   "diag_at_s0": [
+    "-c234 - c244",
+    "-c344"
+   ],
+   "diag_at_s0_nonpositive": true,
+   "f1_is_minus_y1_times_nonneg": true,
+   "f4_nonneg_terms": true,
+   "face_is_equilibria": true,
+   "mass_conserved": true
+  }
+ },
+ "V1_example": {
+  "U": "log(5/4)",
+  "derivs_at_U": [
+   "0",
+   "0",
+   "0",
+   "-2"
+  ],
+  "exposure_system_residuals_zero": true,
+  "initial_sum": "1",
+  "x_closed_form_identity": true
+ },
+ "V23_B4.5_simple_zero": {
+  "B": 4.5,
+  "initial_data": [
+   0.6780683102,
+   5e-05,
+   1.666666667e-05,
+   0.3218650231
+  ],
+  "predicted_limit_t^theta*z": 5.333333333,
+  "samples": [
+   {
+    "s_minus_sc": 0.01096242833,
+    "t": 10.0,
+    "t^theta*z": 0.009166362245
+   },
+   {
+    "s_minus_sc": 0.0100449805,
+    "t": 31.6227766,
+    "t^theta*z": 0.07685554446
+   },
+   {
+    "s_minus_sc": 0.007949623369,
+    "t": 100.0,
+    "t^theta*z": 0.4798226086
+   },
+   {
+    "s_minus_sc": 0.004803720039,
+    "t": 316.227766,
+    "t^theta*z": 1.743595274
+   },
+   {
+    "s_minus_sc": 0.002142835275,
+    "t": 1000.0,
+    "t^theta*z": 3.455280033
+   },
+   {
+    "s_minus_sc": 0.0007811642825,
+    "t": 3162.27766,
+    "t^theta*z": 4.582193686
+   },
+   {
+    "s_minus_sc": 0.0002599330097,
+    "t": 10000.0,
+    "t^theta*z": 5.069449647
+   },
+   {
+    "s_minus_sc": 8.362093703e-05,
+    "t": 31622.7766,
+    "t^theta*z": 5.245159247
+   },
+   {
+    "s_minus_sc": 2.659138566e-05,
+    "t": 100000.0,
+    "t^theta*z": 5.304795407
+   },
+   {
+    "s_minus_sc": 8.418280887e-06,
+    "t": 316227.766,
+    "t^theta*z": 5.328254646
+   },
+   {
+    "s_minus_sc": 2.643972597e-06,
+    "t": 1000000.0,
+    "t^theta*z": 5.374225516
+   },
+   {
+    "s_minus_sc": 7.728449487e-07,
+    "t": 3162277.66,
+    "t^theta*z": 5.792281572
+   },
+   {
+    "s_minus_sc": 8.149138031e-10,
+    "t": 10000000.0,
+    "t^theta*z": 13.12611307
+   }
+  ],
+  "theta": 2.0
+ },
+ "V23_B4_double_zero": {
+  "B": 4.0,
+  "initial_data": [
+   0.5425746147,
+   5e-05,
+   2.5e-05,
+   0.4573503853
+  ],
+  "predicted_limit_t^theta*z": 0.8660254038,
+  "samples": [
+   {
+    "s_minus_sc": 0.04210238951,
+    "t": 10.0,
+    "t^theta*z": 0.003056132139
+   },
+   {
+    "s_minus_sc": 0.04105488982,
+    "t": 31.6227766,
+    "t^theta*z": 0.01594552525
+   },
+   {
+    "s_minus_sc": 0.03819585707,
+    "t": 100.0,
+    "t^theta*z": 0.07234298189
+   },
+   {
+    "s_minus_sc": 0.03200228493,
+    "t": 316.227766,
+    "t^theta*z": 0.2402484647
+   },
+   {
+    "s_minus_sc": 0.02297463282,
+    "t": 1000.0,
+    "t^theta*z": 0.5029423418
+   },
+   {
+    "s_minus_sc": 0.01444755286,
+    "t": 3162.27766,
+    "t^theta*z": 0.7075429793
+   },
+   {
+    "s_minus_sc": 0.00847174799,
+    "t": 10000.0,
+    "t^theta*z": 0.8057448801
+   },
+   {
+    "s_minus_sc": 0.004832576552,
+    "t": 31622.7766,
+    "t^theta*z": 0.8437490388
+   },
+   {
+    "s_minus_sc": 0.002729129805,
+    "t": 100000.0,
+    "t^theta*z": 0.8585725035
+   },
+   {
+    "s_minus_sc": 0.001531910867,
+    "t": 316227.766,
+    "t^theta*z": 0.8697244847
+   },
+   {
+    "s_minus_sc": 0.0008448523255,
+    "t": 1000000.0,
+    "t^theta*z": 0.9064952958
+   },
+   {
+    "s_minus_sc": 0.0004183434538,
+    "t": 3162277.66,
+    "t^theta*z": 1.12775555
+   },
+   {
+    "s_minus_sc": 2.36157649e-10,
+    "t": 10000000.0,
+    "t^theta*z": 3.255795481
+   }
+  ],
+  "theta": 1.5
+ }
+}

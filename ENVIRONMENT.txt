@@ -1,0 +1,7 @@
+Authoring and replay environment (21 October 2026)
+OS: macOS (Apple silicon)
+Python 3.13.5; numpy 2.4.4; scipy 1.17.1; sympy 1.14.0; mpmath 1.3.0; matplotlib 3.10.8 (requirements.txt)
+LaTeX: pdfLaTeX (TeX Live), two passes, run in paper/ with figures in ../figures/
+verify_all.py copies the package to a temporary directory, reruns every script there and compares all 12 outputs byte for byte; --skip-simulation omits the stochastic simulation.
+code/check_chain_family.py and negative_controls.py need only the Python standard library.
+Exact outputs are platform-independent; floating-point outputs and figures are byte-identical with the pinned versions and may differ in the last digits elsewhere.

@@ -1,0 +1,6 @@
+# Python 3.13.5; versions with which the archived outputs were produced.
+numpy==2.4.4
+scipy==1.17.1
+sympy==1.14.0
+mpmath==1.3.0
+matplotlib==3.10.8

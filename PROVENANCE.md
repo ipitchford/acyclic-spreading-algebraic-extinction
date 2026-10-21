@@ -1,0 +1,9 @@
+# Provenance
+
+* Scholarly creator: **Anonymous** (standing Evidence Press attribution). No human research contribution is claimed or inferred.
+* Publisher: Evidence Press (https://evidencepress.org). Repository maintenance and publication operations: the Evidence Press publishing workflow under the repository owner's account; this is not authorship.
+* Production: AI-assisted research. Large language model-based tools were used extensively for exploration, proofs, computation, text and reference checking. Internal AI-assisted review in several roles, an AI-assisted adversarial review by a different model (OpenAI gpt-5.6-sol) and a verification re-review were used to find errors; substantive points and responses are summarised in [REVIEW_SUMMARY.md](REVIEW_SUMMARY.md). Original reports are kept privately.
+* Target: Chan, Crommelin and Mandjes, *Asymptotic behavior for a general class of spreading models*, arXiv:2511.02437v1 (only version); quoted with page pinpoints. Third-party papers are not redistributed (`sources/provenance.json` records URLs and hashes).
+* Parent: earlier Evidence Press release *Algebraic extinction in acyclic compartment models* (doi:10.5281/zenodo.23501636), which first refuted the conjecture. This package is its successor; the overlap is stated in §9 of the paper.
+* History: revised on 21 October 2026 in three rounds after internal review, including the successor framing. Only this version is published.
+* Publication edit: the reserved DOI and version were inserted in the manuscript (title block and availability statement) and README, the PDF was rebuilt, the release records (STATUS, ASSURANCE, PROVENANCE, AI_INDEX, CLAIMS, RESEARCH_GATES, REVIEW_SUMMARY, licences, citation and Zenodo metadata, ENVIRONMENT, CI workflow) and `negative_controls.py` were added, and MANIFEST and SHA256SUMS were regenerated. Check scripts and outputs were compared by hash with clean replay copies.

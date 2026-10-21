@@ -1,0 +1,54 @@
+{
+  "title": "Algebraic extinction in acyclic spreading models: explicit counterexamples, genericity and support-checkable repairs",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate; successor release.</strong> Chan, Crommelin and Mandjes (arXiv:2511.02437v1, Conjecture 1) conjectured that, in their class of interaction-driven spreading models, every vanishing compartment decays exponentially whenever the transition and dependency graphs are acyclic or nearly so. The conjecture was first refuted by an earlier Evidence Press release from the same publisher, <em>Algebraic extinction in acyclic compartment models</em> (doi:10.5281/zenodo.23501636), with a four-compartment 18/t<sup>2</sup> example whose dependency graph has a cycle; that release also proved four compartments necessary and a limiting-Jacobian log-rate theorem. Section 9 of this paper states the overlap item by item.</p><p>This package adds: a four-compartment staged-rumour model in which both graphs are acyclic and the trajectory is explicit, with x(t) ~ &radic;(3/8) t<sup>&minus;3/2</sup> and effective reproduction number tending to one; a no-direct-infection SWIR-type submodel with a tricritical-type triple zero, also giving t<sup>&minus;3/2</sup>; a t<sup>&minus;2</sup> example of codimension one; chains with tails t<sup>&minus;1&minus;1/m</sup> for every even m; a proof that no four-compartment model decays more slowly than t<sup>&minus;3/2</sup>; a complete classification of the four-state chain; genericity (algebraic extinction confined to a null set of initial data in single-catalyst models); a general slowing law for the return of exponential decay; absence of an outbreak peak before a slow tail in the chain, SWIR and hierarchy families; and support- and rate-checkable conditions for exponential decay. An exploratory simulation suggests finite populations die out at about 1.5 N<sup>0.42</sup>, far earlier than the deterministic tail.</p><p>The archive contains the manuscript (PDF and LaTeX), exact-rational, symbolic, high-precision and numerical check scripts with committed outputs and figures, an exploratory simulation with fixed seeds, a replay script comparing all outputs byte for byte, semantic negative controls and SHA-256 sums. Assurance: written proofs; exact and numerical checks; producer-side replay including clean full replays in separate copies; internal AI-assisted review, AI-assisted adversarial review (OpenAI gpt-5.6-sol) and a verification re-review. This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Prose, manuscript and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23548109",
+  "publication_date": "2026-10-21",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "spreading models",
+    "algebraic extinction",
+    "compartmental models",
+    "acyclic graphs",
+    "Metzler matrices",
+    "tricritical point",
+    "SWIR",
+    "epidemic models"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/acyclic-spreading-algebraic-extinction/tree/v1.0.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/acyclic-spreading-algebraic-extinction/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23501636",
+      "relation": "continues",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "arXiv:2511.02437",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "10.1103/PhysRevE.70.026114",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Original code (Python scripts, CI workflow) is released under the MIT licence; see LICENSES.md in the archive. Short quotations of the source remain the source authors' text."
+}

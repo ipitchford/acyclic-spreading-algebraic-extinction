@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Algebraic extinction in acyclic spreading models: explicit counterexamples, genericity and support-checkable repairs"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23548109
+date-released: 2026-10-21
+repository-code: "https://github.com/ipitchford/acyclic-spreading-algebraic-extinction"
+url: "https://evidencepress.org/releases/acyclic-spreading-algebraic-extinction/"
+license: CC0-1.0
+keywords:
+  - spreading models
+  - algebraic extinction
+  - compartmental models
+  - acyclic graphs
+  - Metzler matrices
+  - tricritical point
+  - SWIR
+abstract: "Chan, Crommelin and Mandjes conjectured that every vanishing compartment of their interaction-driven spreading models decays exponentially when two graphs built from the model are acyclic or nearly so. An earlier Evidence Press release (doi:10.5281/zenodo.23501636) refuted the conjecture with a four-compartment 18/t^2 example. This successor gives a four-compartment model in which both graphs are acyclic and the trajectory is explicit, with x(t) ~ sqrt(3/8) t^(-3/2); a no-direct-infection SWIR-type submodel also gives a t^(-3/2) counterexample. With four compartments nothing decays more slowly than t^(-3/2); chains give t^(-1-1/m) for every even m. Algebraic extinction needs non-generic initial data in single-catalyst models, exponential decay returns after perturbation by an explicit slowing law, the slow tails never follow an outbreak peak in the chain, SWIR and hierarchy families, and support- and rate-checkable conditions rule the mechanism out. Unrefereed candidate. Original code is MIT-licensed; see LICENSES.md."
+references:
+  - type: article
+    title: "Asymptotic behavior for a general class of spreading models"
+    authors:
+      - family-names: Chan
+        given-names: K. M. D.
+      - family-names: Crommelin
+        given-names: D. T.
+      - family-names: Mandjes
+        given-names: M. R. H.
+    year: 2025
+    url: "https://arxiv.org/abs/2511.02437v1"
+  - type: report
+    title: "Algebraic extinction in acyclic compartment models"
+    authors:
+      - name: Anonymous
+    year: 2026
+    doi: 10.5281/zenodo.23501636

@@ -1,0 +1,231 @@
+{
+  "base": {
+    "initial": [
+      "25/48",
+      "5/24",
+      "1/240",
+      "4/15"
+    ],
+    "limit_t_times_one_minus_Reff": "9/2",
+    "rho": "4/5",
+    "tail_constant": "sqrt(3/8)"
+  },
+  "checks": {
+    "Reff_asymptotic": true,
+    "Reff_identity": true,
+    "base_closed_form_residuals": true,
+    "base_initial_data": true,
+    "base_tail_constant": true,
+    "base_violates_dominance": true,
+    "double_example_data": true,
+    "double_example_poly": true,
+    "double_factorisation": true,
+    "double_family_rank2": true,
+    "double_no_root_near_U_for_positive_eps": true,
+    "no_peak_base": true,
+    "no_peak_hierarchy_m2_to_20": true,
+    "no_peak_triple_family": true,
+    "odd_m3_negative_active_fraction": true,
+    "slowing_double": true,
+    "slowing_order5": true,
+    "slowing_triple": true,
+    "slowing_triple_matches_exact_-1e-12": true,
+    "slowing_triple_matches_exact_-1e-6": true,
+    "slowing_triple_matches_exact_1e-12": true,
+    "slowing_triple_matches_exact_1e-6": true,
+    "swir_G2": true,
+    "swir_I0_closed": true,
+    "swir_W0_closed": true,
+    "swir_eta_half_dominance": true,
+    "swir_exposure_eqs": true,
+    "swir_positive_data": true,
+    "swir_tail_converges": true,
+    "swir_triple_zero": true,
+    "swir_violates_dominance": true,
+    "triple_endpoint_general": true,
+    "triple_family_rank1": true,
+    "triple_root_data_formula": true
+  },
+  "criterion_examples": {
+    "base_chain": {
+      "X": {
+        "autocatalytic_inflow_from_persistent": {
+          "W": "1"
+        },
+        "dominance_holds": false
+      }
+    },
+    "swir_eta4": {
+      "I": {
+        "autocatalytic_inflow_from_persistent": {
+          "W": "4"
+        },
+        "dominance_holds": false
+      }
+    },
+    "swir_eta_half": {
+      "I": {
+        "autocatalytic_inflow_from_persistent": {
+          "W": "1/2"
+        },
+        "dominance_holds": true
+      }
+    }
+  },
+  "double_example": {
+    "endpoint": [
+      "1/2",
+      "1/4",
+      "0",
+      "1/4"
+    ],
+    "endpoint_after_jump": [
+      "1/8",
+      "3/8",
+      "0",
+      "1/2"
+    ],
+    "initial": [
+      "50/81",
+      "25/162",
+      "11/3240",
+      "9/40"
+    ],
+    "tail": "4 t^-2"
+  },
+  "double_family_jacobian_minor": "-(3*h - 1)/(2*r_star**2)",
+  "odd_m3_active_fraction_at_t0": "-1/6048",
+  "slowing_law": {
+    "base_triple": {
+      "a_k": "0.333333333333",
+      "g": "1.25",
+      "order_k": 3,
+      "results": [
+        {
+          "epsilon": "1.0e-6",
+          "rate": "0.0002413723462",
+          "rate_over_law": "1.0",
+          "shift_over_scale": "1.007849488"
+        },
+        {
+          "epsilon": "-1.0e-6",
+          "rate": "0.0002413723462",
+          "rate_over_law": "1.0",
+          "shift_over_scale": "-0.9923114502"
+        },
+        {
+          "epsilon": "1.0e-12",
+          "rate": "2.413723462e-8",
+          "rate_over_law": "1.0",
+          "shift_over_scale": "1.000077689"
+        },
+        {
+          "epsilon": "-1.0e-12",
+          "rate": "2.413723462e-8",
+          "rate_over_law": "1.0",
+          "shift_over_scale": "-0.9999223272"
+        }
+      ]
+    },
+    "double_example": {
+      "a_k": "0.25",
+      "g": "1.11111111111",
+      "order_k": 2,
+      "positive_eps_1e-8_final_r": "0.5000000667",
+      "positive_eps_1e-8_first_root_u": "0.798507874",
+      "results": [
+        {
+          "epsilon": "-1.0e-8",
+          "rate": "0.0001054536834",
+          "rate_over_law": "1.000421482",
+          "shift_over_scale": "-0.9996839425"
+        },
+        {
+          "epsilon": "-1.0e-12",
+          "rate": "1.054096998e-6",
+          "rate_over_law": "1.000004216",
+          "shift_over_scale": "-0.9999968377"
+        }
+      ]
+    },
+    "hierarchy_m4": {
+      "a_k": "0.2",
+      "g": "1.125",
+      "order_k": 5,
+      "results": [
+        {
+          "epsilon": "1.0e-10",
+          "rate": "3.981970345e-8",
+          "rate_over_law": "1.0",
+          "shift_over_scale": "1.007130315"
+        },
+        {
+          "epsilon": "-1.0e-10",
+          "rate": "3.981970345e-8",
+          "rate_over_law": "1.0",
+          "shift_over_scale": "-0.9930027332"
+        },
+        {
+          "epsilon": "1.0e-20",
+          "rate": "3.981970345e-16",
+          "rate_over_law": "1.0",
+          "shift_over_scale": "1.000070638"
+        },
+        {
+          "epsilon": "-1.0e-20",
+          "rate": "3.981970345e-16",
+          "rate_over_law": "1.0",
+          "shift_over_scale": "-0.9999293758"
+        }
+      ]
+    }
+  },
+  "swir": {
+    "dependency_cycles": [
+      "I",
+      "I->S",
+      "I->W"
+    ],
+    "endpoint": [
+      "1/4",
+      "1/4",
+      "0",
+      "1/2"
+    ],
+    "initial": [
+      "exp(2/5)/4",
+      "3exp(2/5)/20",
+      "(3-2exp(2/5))/5",
+      "2/5"
+    ],
+    "initial_numeric": [
+      "0.3729561744",
+      "0.2237737046",
+      "0.003270120943",
+      "0.4"
+    ],
+    "rates": {
+      "I->R partners S,W,I,R": 1,
+      "S->W partner I": 4,
+      "W->I partner I": 4
+    },
+    "tail": "sqrt(3)/8 t^-3/2",
+    "tail_check": [
+      {
+        "t": "186741.49",
+        "t^(3/2)*I/(sqrt(3)/8)": "0.99592835",
+        "u_star_minus_u": "1e-3"
+      },
+      {
+        "t": "18742493.0",
+        "t^(3/2)*I/(sqrt(3)/8)": "0.99959939",
+        "u_star_minus_u": "1e-4"
+      },
+      {
+        "t": "1.874925e+9",
+        "t^(3/2)*I/(sqrt(3)/8)": "0.99996",
+        "u_star_minus_u": "1e-5"
+      }
+    ]
+  }
+}

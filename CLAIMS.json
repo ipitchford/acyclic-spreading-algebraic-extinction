@@ -1,0 +1,127 @@
+{
+ "schemaVersion": "1.0",
+ "release": "acyclic-spreading-algebraic-extinction",
+ "version": "1.0.0-candidate",
+ "doi": "10.5281/zenodo.23548109",
+ "title": "Algebraic extinction in acyclic spreading models: explicit counterexamples, genericity and support-checkable repairs",
+ "creator": "Anonymous",
+ "status": "unrefereed-candidate",
+ "statusLabels": {
+  "proof": "complete written argument in the paper, not machine-checked",
+  "exact": "symbolic or exact-rational computation reproduced by the package",
+  "numerical": "floating-point or high-precision check",
+  "exploratory": "simulation or heuristic without proof",
+  "open": "not settled"
+ },
+ "source": {
+  "reference": "Chan, K. M. D., Crommelin, D. T., and Mandjes, M. R. H. (2025). Asymptotic behavior for a general class of spreading models. arXiv:2511.02437v1 (only version as of 2026-10-21). Conjecture 1, p. 25.",
+  "url": "https://arxiv.org/abs/2511.02437v1",
+  "pinned_pdf_sha256": "76db3996d087b6108c93c5609d94f93f66e29e01a547bf055490c8508f6ee364",
+  "quoted_items": [
+   "initial data p.6",
+   "eqs (1)-(4) pp.6-7",
+   "Definition 6 p.7",
+   "Definition 7 p.8",
+   "eq (8) p.9",
+   "Assumption 1 p.11",
+   "Definition 8 p.14",
+   "Assumption 2 p.15",
+   "Theorem 2 p.17",
+   "Theorem 3 p.19",
+   "Corollary 1 p.22",
+   "exponential decay p.24",
+   "Conjecture 1 p.25",
+   "edge case p.32"
+  ]
+ },
+ "parentRelease": {
+  "title": "Algebraic extinction in acyclic compartment models",
+  "doi": "10.5281/zenodo.23501636",
+  "url": "https://evidencepress.org/releases/algebraic-extinction-compartments/",
+  "relation": "Earlier release by the same publisher (Evidence Press). It refutes Conjecture 1 (18/t^2, cyclic dependency graph); same minimality statement; family with exponents m/(m-1); classification of its own four-state model; same limiting-Jacobian log-rate theorem. This paper is a successor."
+ },
+ "claims": [
+  {
+   "id": "swir_in_class",
+   "statement": "A no-direct-infection SWIR/GEP submodel (Janssen-Muller-Stenull 2004, Sec. II), with recovery encoded as in source eq. (8), satisfies Assumptions 1-2 and admits a tricritical-type triple zero; interior data give x ~ (sqrt(3)/8) t^-3/2 (nu=eta=4). Not identified with the tricritical point analysed by Janssen et al.",
+   "status": "proof; exact"
+  },
+  {
+   "id": "base_counterexample",
+   "statement": "s'=-2sx, w'=2sx-wx, x'=(w-r)x, r'=rx; data (25/48,5/24,1/240,4/15); both graphs acyclic; x ~ sqrt(3/8) t^-3/2; derived from a triple root of the exposure cubic.",
+   "status": "proof; exact"
+  },
+  {
+   "id": "double_zero_example",
+   "statement": "Same model, data (50/81,25/162,11/3240,9/40), x ~ 4 t^-2; codimension one.",
+   "status": "proof; exact"
+  },
+  {
+   "id": "minimality",
+   "statement": "N<=3 under (G1)-(G2) with interior data implies exponential decay.",
+   "status": "proof"
+  },
+  {
+   "id": "hierarchy",
+   "statement": "Even m: (m+2)-state chain with both graphs acyclic, x ~ C_m t^(-1-1/m); odd m fails (m=3 gives x0=-1/6048).",
+   "status": "proof; exact (m=2..20)"
+  },
+  {
+   "id": "dimension_bound",
+   "statement": "Only for y'=xHy: zero order <= 2*floor(N/2)-1, sharp (odd N by duplicating the terminal compartment).",
+   "status": "proof"
+  },
+  {
+   "id": "slowest_four_state",
+   "statement": "Any N=4 model under (G1)-(G2) with interior data: each vanishing coordinate is exponential, ~C t^-2 or ~C t^-3/2; nothing slower (Theorem 5.7). Two-vanishing-state examples near t^-3/2 and t^-2 are numerical (Remark 5.8).",
+   "status": "proof; numerical examples"
+  },
+  {
+   "id": "classification",
+   "statement": "Four-state chain, all rates and interior data: exponential, 2/(kappa t^2), or sqrt(3)/(2 sqrt(alpha beta gamma)) t^-3/2.",
+   "status": "proof"
+  },
+  {
+   "id": "genericity",
+   "statement": "y'=xHy: exponential set open, algebraic set null; order>=k set has codimension r_k<=k-1; chain codimensions 1 and 2.",
+   "status": "proof; exact (chain Jacobians)"
+  },
+  {
+   "id": "slowing_law",
+   "statement": "Order-k zero, perturbation with g!=0: rate k a_k^(1/k) |eps g|^((k-1)/k), endpoint shift |eps|^(1/k); one-sided jump for even k.",
+   "status": "proof; numerical (k=2,3,5)"
+  },
+  {
+   "id": "no_peak",
+   "statement": "x strictly decreasing for multiple-zero trajectories of the chain (all rates), SWIR, and the hierarchy.",
+   "status": "proof; exact identities"
+  },
+  {
+   "id": "limiting_block",
+   "statement": "Under (G1): lim (1/t) log||v|| = s(J); exponential iff s(J)<0. A posteriori; standard tools.",
+   "status": "proof"
+  },
+  {
+   "id": "support_condition",
+   "statement": "Acyclic limiting influence graph and no autocatalytic inflow from persistent donors imply exponential decay; checkable from supports once labels are known (source Corollary 1 identifiability condition).",
+   "status": "proof"
+  },
+  {
+   "id": "rate_condition",
+   "statement": "Acyclic influence graph and c_kii <= h_ik (strict for some k) imply exponential decay; rates alone cannot decide an individual trajectory without its initial data.",
+   "status": "proof"
+  },
+  {
+   "id": "finite_population",
+   "statement": "Gillespie simulation, N=2.4e4..2.4e7: median extinction ~ 1.48 N^0.42 (95% bootstrap [0.38,0.46]).",
+   "status": "exploratory"
+  }
+ ],
+ "exclusions": [
+  "No historical-priority claim; the conjecture is already refuted in the prior release.",
+  "Minimality and the limiting-block theorem restate results of the prior release.",
+  "The exponent 3/2, the exposure clock and Metzler/Perron-Frobenius tools are not claimed as new.",
+  "The limiting-block theorem is an a posteriori criterion that needs the limit.",
+  "No empirical data; critical data are tuned."
+ ]
+}

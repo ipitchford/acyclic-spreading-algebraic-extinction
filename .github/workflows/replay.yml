@@ -1,0 +1,21 @@
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  quick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Check SHA256SUMS
+        run: sha256sum -c SHA256SUMS
+      - name: Semantic negative controls (standard library, exact)
+        run: python -B -O negative_controls.py
+      - name: Exact hierarchy check m = 2..20 (standard library), byte for byte
+        run: |
+          mkdir -p /tmp/q && cp -R . /tmp/q/pkg && cd /tmp/q/pkg/code
+          python -B check_chain_family.py > /dev/null
+          cmp chain_verification.json "$GITHUB_WORKSPACE/code/chain_verification.json"

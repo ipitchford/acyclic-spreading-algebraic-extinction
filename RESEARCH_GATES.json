@@ -1,0 +1,260 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 21 October 2026 at publication from the internal dated literature verification (32 references checked by DOI, arXiv or library record), the review-round literature findings and the prior-release comparison. Bounded search; not priority certification.",
+ "contributionMap": [
+  {
+   "claim": "Four-compartment model with both transition and dependency graphs acyclic, explicit trajectory, x(t) ~ sqrt(3/8) t^(-3/2) (Theorem 3.1)",
+   "unit": "statement",
+   "paperLocation": "abstract; Table 1; Theorem 3.1",
+   "searches": [
+    {
+     "date": "2026-10-21",
+     "query": "Chan Crommelin Mandjes Conjecture 1 counterexample; \"algebraic extinction\" compartment acyclic",
+     "corpus": "arXiv, Crossref, public web; Evidence Press catalogue"
+    },
+    {
+     "date": "2026-10-21",
+     "query": "\"two-step contagion\" \"tricritical\" mean-field t^-3/2; generalized epidemic process mean field",
+     "corpus": "Crossref, arXiv full texts of Janssen-Muller-Stenull 2004 and Choi-Lee-Kahng 2017"
+    }
+   ],
+   "closestPriorWork": "Earlier Evidence Press release (doi:10.5281/zenodo.23501636) refutes the conjecture with an 18/t^2 example whose dependency graph has a cycle; the mean-field GEP/SWIR literature (Janssen et al. 2004 Sec. II; Choi-Lee-Kahng 2017) has tricritical t^-3/2 scaling but no explicit interior trajectory with both graphs acyclic.",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Conjecture 1 is false",
+   "unit": "statement",
+   "paperLocation": "abstract; Section 1 \"What was already known\"; Section 9",
+   "searches": [
+    {
+     "date": "2026-10-21",
+     "query": "Evidence Press releases citing arXiv:2511.02437",
+     "corpus": "evidencepress.org release pages, paper.json and archived Zenodo PDF"
+    }
+   ],
+   "closestPriorWork": "Anonymous (2026), Algebraic extinction in acyclic compartment models, Evidence Press, doi:10.5281/zenodo.23501636, Theorem 1.",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "No-direct-infection SWIR/GEP submodel admits a tricritical-type triple zero, giving a t^(-3/2) counterexample",
+   "unit": "statement",
+   "paperLocation": "Section 3.4; Table 7",
+   "searches": [
+    {
+     "date": "2026-10-21",
+     "query": "SWIR model mean-field equations; Janssen Muller Stenull generalized epidemic process tricritical",
+     "corpus": "Crossref; arXiv cond-mat/0404167v2 full text; arXiv 1608.02323, 1703.04288"
+    }
+   ],
+   "closestPriorWork": "Janssen, Muller and Stenull (2004) Sec. II eq. (2.3) and Sec. V; Choi, Lee and Kahng (2017). The paper credits the model and the exponent to them and does not identify its submodel with their analysed tricritical point.",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "Any four-compartment model under (G1)-(G2) with interior data decays exponentially, like t^(-2) or like t^(-3/2); nothing slower (Theorem 5.7)",
+   "unit": "statement",
+   "paperLocation": "Theorem 5.7",
+   "searches": [
+    {
+     "date": "2026-10-21",
+     "query": "slowest algebraic decay quadratic conservative compartment model four states",
+     "corpus": "arXiv, Crossref, Evidence Press prior release"
+    }
+   ],
+   "closestPriorWork": "Prior release proves four compartments necessary but gives no bound on the slowest four-state tail.",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Genericity, slowing law, no-peak, support- and rate-checkable conditions (Theorems 6.2-6.3, Proposition 6.5, Corollaries 7.3-7.4)",
+   "unit": "statement",
+   "paperLocation": "Sections 6-7",
+   "searches": [
+    {
+     "date": "2026-10-21",
+     "query": "centre manifold codimension extinction rate perturbation; siphon persistence chemical reaction networks; Metzler influence graph exponential stability",
+     "corpus": "Crossref; Carr 1981; Angeli-De Leenheer-Sontag 2007; Farina-Rinaldi; Berman-Plemmons"
+    }
+   ],
+   "closestPriorWork": "Standard centre-manifold and Metzler/Perron-Frobenius tools; the prior release has no counterpart of these statements (paper Section 9).",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Logarithmic decay rate equals the spectral abscissa of the limiting Metzler block (Theorem 7.1); three compartments never suffice (Theorem 4.1)",
+   "unit": "statement",
+   "paperLocation": "Theorems 4.1 and 7.1",
+   "searches": [
+    {
+     "date": "2026-10-21",
+     "query": "prior release Theorems 5, 7 and Corollary 8",
+     "corpus": "archived PDF of doi:10.5281/zenodo.23501636"
+    }
+   ],
+   "closestPriorWork": "Same statements as the prior release (its Theorem 5, Theorem 7 and Corollary 8); no novelty claimed.",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "Exposure-clock reduction to a polynomial whose multiple root fixes the tail; Metzler/Perron-Frobenius spectral bounds",
+   "unit": "method",
+   "paperLocation": "Sections 2-3, 5, 7",
+   "searches": [
+    {
+     "date": "2026-10-21",
+     "query": "exposure time change Kermack McKendrick final size; quadratisation; Metzler matrices positive systems",
+     "corpus": "Crossref; Kermack-McKendrick 1927; Arruda et al. 2015; Rada et al. 2021; Bychkov-Pogudin 2021"
+    }
+   ],
+   "closestPriorWork": "The exposure clock is classical (Kermack-McKendrick; Arruda et al.; Rada et al.); Metzler tools are textbook (Farina-Rinaldi; Berman-Plemmons).",
+   "verdict": "known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Chan, Crommelin and Mandjes (2025), Asymptotic behavior for a general class of spreading models, arXiv:2511.02437v1",
+   "usedFor": "Source of the model class, hypotheses and Conjecture 1",
+   "readWhat": "Full v1 PDF; quoted with page pinpoints: initial data p.6, eqs (1)-(4), Definitions 6-8, eq (8), Assumptions 1-2, Theorems 2-3, Corollary 1, p.24, Conjecture 1 p.25, p.32",
+   "date": "2026-10-21",
+   "evidenceLocator": "https://arxiv.org/abs/2511.02437v1; sources/provenance.json (pinned SHA-256); paper Section 2.2"
+  },
+  {
+   "citation": "Anonymous (2026), Algebraic extinction in acyclic compartment models, Evidence Press, doi:10.5281/zenodo.23501636",
+   "usedFor": "Earlier refutation of the conjecture; overlap statement",
+   "readWhat": "Release page, paper.json and archived PDF: Theorem 1 (18/t^2, dependency cycle Y->I->Y), Theorem 2 (exponents m/(m-1)), Theorem 5 (minimality), Theorem 6 (classification), Theorem 7 and Corollary 8 (spectral results)",
+   "date": "2026-10-21",
+   "evidenceLocator": "https://doi.org/10.5281/zenodo.23501636; paper Section 9 \"Relation to the prior release\""
+  },
+  {
+   "citation": "Janssen, Muller and Stenull (2004), Generalized epidemic process and tricritical dynamic percolation, Phys. Rev. E 70, 026114",
+   "usedFor": "Mean-field SWIR/GEP equations and the tricritical exponent 3/2",
+   "readWhat": "arXiv cond-mat/0404167v2: Sec. II mean-field theory eq. (2.3) and phase diagram; Sec. V dynamic scaling eq. (5.57)",
+   "date": "2026-10-21",
+   "evidenceLocator": "https://doi.org/10.1103/PhysRevE.70.026114; paper Section 3.4"
+  },
+  {
+   "citation": "Choi, Lee and Kahng (2017), Mixed-order phase transition in a two-step contagion model with a single infectious seed, Phys. Rev. E 95, 022304",
+   "usedFor": "Name and reaction scheme of the SWIR model",
+   "readWhat": "arXiv 1608.02323: model definition (four reactions) and attribution to Janssen et al.",
+   "date": "2026-10-21",
+   "evidenceLocator": "https://doi.org/10.1103/PhysRevE.95.022304"
+  },
+  {
+   "citation": "de Arruda, Lebensztayn, Rodrigues and Rodriguez (2015), R. Soc. Open Sci. 2, 150240",
+   "usedFor": "Rumour-scotching model; base chain is a two-step version of eq. (3.2)",
+   "readWhat": "Model equations (3.2)",
+   "date": "2026-10-21",
+   "evidenceLocator": "https://doi.org/10.1098/rsos.150240"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Slowest tail at fixed N>=5 outside the single-catalyst class, and whether t^(-2) occurs with V={1,i} at N=4",
+   "closingQuestion": "Is there a known classification of high-order zeros for conservative quadratic systems with these support constraints?",
+   "triedOrSearched": "Proposition 5.3 bound in the class y'=xHy; quadratisation literature (Bychkov-Pogudin) does not respect positivity or the graph conditions",
+   "estimatedCost": "research project",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Needs new analysis beyond the paper",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Genericity outside the single-catalyst class",
+   "closingQuestion": "Does a transversality argument extend to several catalysts?",
+   "triedOrSearched": "Theorem 6.2 proof technique; centre-manifold codimension arguments (Carr)",
+   "estimatedCost": "research project",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Proof technique uses the single catalyst",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Whether any model in the class has an algebraic tail after a genuine outbreak peak",
+   "closingQuestion": "Can the zero-count argument of Proposition 6.5 be extended or a peaked example be constructed?",
+   "triedOrSearched": "Proved absence for the chain, SWIR and hierarchy families",
+   "estimatedCost": "research project",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Open problem (3) of the paper",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "No stochastic theory of the near-tricritical endgame; finite-population result is exploratory",
+   "closingQuestion": "Do known diffusion approximations (Kurtz; Martin-Lof) give the extinction-time scaling?",
+   "triedOrSearched": "Gillespie simulation N=2.4e4..2.4e7 with bootstrap interval; Kurtz 1970 and Martin-Lof 1998 cited",
+   "estimatedCost": "research project",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Requires a separate stochastic analysis",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Siphon formulation of the support-checkable condition",
+   "closingQuestion": "Do the vanishing sets coincide with minimal siphons under (G1)-(G2)?",
+   "triedOrSearched": "Angeli-De Leenheer-Sontag 2007 read for siphon persistence",
+   "estimatedCost": "several days",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Posed as open problem (5)",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Chan dissertation (Leiden 2026) could not be accessed; a later version of the conjecture may exist",
+   "closingQuestion": "Is the dissertation text available?",
+   "triedOrSearched": "universiteitleiden.nl event page and handle 1887/4309746; connection refused",
+   "estimatedCost": "unknown, external access",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Text inaccessible; stated in the paper",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Polya-Szego problem number for the exponential-sum zero lemma not verified",
+   "closingQuestion": "Can the lemma be proved in the text instead?",
+   "triedOrSearched": "Lemma proved in the text; citation given without problem number",
+   "estimatedCost": "done",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Critical initial data are tuned; deterministic model class, no data analysed",
+   "closingQuestion": "Is the tuning quantified?",
+   "triedOrSearched": "Codimensions 1 and 2 in the chain (Theorem 6.2) and the slowing law (Theorem 6.3)",
+   "estimatedCost": "done",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Proofs are not formalised in a proof assistant",
+   "closingQuestion": "Would a formalisation be cheap?",
+   "triedOrSearched": "Not attempted",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Out of scope for this release",
+   "whyNotClosedNow": ""
+  }
+ ],
+ "extensionScout": {
+  "by": "internal AI-assisted first-round review (editor, methodology, domain, perspective and devil's-advocate roles) and the revising agent",
+  "date": "2026-10-21",
+  "proposals": [
+   "support-checkable condition",
+   "genericity",
+   "rate-checkable criterion",
+   "slowest four-compartment tail",
+   "general-order slowing law",
+   "no-peak result",
+   "finite-population simulation"
+  ],
+  "actions": [
+   "Corollary 7.3 proved",
+   "Theorem 6.2 proved; outside single-catalyst class left open",
+   "Corollary 7.4 proved with a negative result",
+   "Theorem 5.7 proved; Remark 5.8 numerical",
+   "Theorem 6.3 proved; numerical check k=2,3,5",
+   "Proposition 6.5 proved for three families; peaked case open",
+   "Section 8 exploratory simulation"
+  ]
+ }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "filename": "chan_crommelin_mandjes.html",
+    "url": "https://arxiv.org/html/2511.02437v1",
+    "bytes": 986154,
+    "sha256": "4a1ed83bba7e7ccfd716aade1528523fc85b5b6374a8b9d4bc9670108c3ea9b8"
+  },
+  {
+    "filename": "chan_crommelin_mandjes.pdf",
+    "url": "https://ir.cwi.nl/pub/36026/36026.pdf",
+    "bytes": 654136,
+    "sha256": "76db3996d087b6108c93c5609d94f93f66e29e01a547bf055490c8508f6ee364"
+  },
+  {
+    "filename": "chan_crommelin_mandjes_arxiv_v1.pdf",
+    "url": "https://arxiv.org/pdf/2511.02437v1",
+    "bytes": 654136,
+    "sha256": "76db3996d087b6108c93c5609d94f93f66e29e01a547bf055490c8508f6ee364",
+    "note": "arXiv v1 PDF; byte-identical to the institutional copy; page pinpoints in the paper refer to this file"
+  }
+]

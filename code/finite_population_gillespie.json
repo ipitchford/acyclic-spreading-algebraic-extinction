@@ -1,0 +1,116 @@
+{
+  "diffusion_heuristic_theta": 0.4,
+  "fit_median_T": {
+    "K": 1.48103,
+    "form": "median T ~ K N^theta (least squares on log-log over listed N)",
+    "n_bootstrap": 2000,
+    "theta": 0.424241,
+    "theta_bootstrap_95": [
+      0.38425,
+      0.456608
+    ]
+  },
+  "fit_t1_reference": {
+    "K": 0.612543,
+    "note": "t1 ~ 1.5 (N/3)^(2/3) asymptotically",
+    "theta": 0.676647
+  },
+  "label": "EXPLORATORY SIMULATION -- Gillespie direct method; not a proof",
+  "model": {
+    "T": "first time X=0",
+    "deterministic_t1": "N*x(t1)=1 on exact solution, t=(3/2)(d^-2-16)",
+    "events": [
+      "A->B rate 2AX/N",
+      "B->X rate BX/N",
+      "X->C rate CX/N"
+    ],
+    "initial_fractions": "(25/48, 5/24, 1/240, 4/15)"
+  },
+  "per_N": [
+    {
+      "N": 24000,
+      "T_max": 372.012,
+      "T_min": 31.3494,
+      "T_q10": 50.9719,
+      "T_q90": 233.095,
+      "final_A_q10": 0.220725,
+      "final_A_q90": 0.464137,
+      "final_C_q10": 0.283575,
+      "final_C_q90": 0.40695,
+      "median_T": 97.9808,
+      "median_T_over_N^(2/5)": 1.73403,
+      "median_events": 3815,
+      "median_final_A_over_N": 0.419354,
+      "median_final_B_over_N": 0.282396,
+      "median_final_C_over_N": 0.297604,
+      "ratio_t1_over_medianT": 5.67959,
+      "runs": 200,
+      "t1_N": 556.491
+    },
+    {
+      "N": 240000,
+      "T_max": 923.604,
+      "T_min": 108.583,
+      "T_q10": 151.239,
+      "T_q90": 551.812,
+      "final_A_q10": 0.250578,
+      "final_A_q90": 0.430833,
+      "final_C_q10": 0.2936,
+      "final_C_q90": 0.384119,
+      "median_T": 282.632,
+      "median_T_over_N^(2/5)": 1.9913,
+      "median_events": 53272,
+      "median_final_A_over_N": 0.383196,
+      "median_final_B_over_N": 0.30589,
+      "median_final_C_over_N": 0.310915,
+      "ratio_t1_over_medianT": 9.61801,
+      "runs": 60,
+      "t1_N": 2718.36
+    },
+    {
+      "N": 2400000,
+      "T_max": 2060.84,
+      "T_min": 303.375,
+      "T_q10": 410.512,
+      "T_q90": 1657.81,
+      "final_A_q10": 0.267324,
+      "final_A_q90": 0.395725,
+      "final_C_q10": 0.306051,
+      "final_C_q90": 0.371861,
+      "median_T": 986.422,
+      "median_T_over_N^(2/5)": 2.7668,
+      "median_events": 868121,
+      "median_final_A_over_N": 0.31143,
+      "median_final_B_over_N": 0.343663,
+      "median_final_C_over_N": 0.344907,
+      "ratio_t1_over_medianT": 12.9866,
+      "runs": 20,
+      "t1_N": 12810.3
+    },
+    {
+      "N": 24000000,
+      "T_max": 4045.18,
+      "T_min": 706.822,
+      "T_q10": 869.64,
+      "T_q90": 2913.71,
+      "final_A_q10": 0.295697,
+      "final_A_q90": 0.380456,
+      "final_C_q10": 0.312019,
+      "final_C_q90": 0.353821,
+      "median_T": 1676.22,
+      "median_T_over_N^(2/5)": 1.87174,
+      "median_events": 6171411,
+      "median_final_A_over_N": 0.364142,
+      "median_final_B_over_N": 0.316882,
+      "median_final_C_over_N": 0.318975,
+      "ratio_t1_over_medianT": 35.6616,
+      "runs": 20,
+      "t1_N": 59776.5
+    }
+  ],
+  "seeds": {
+    "bootstrap": 20261022,
+    "master": 20261021,
+    "scheme": "SeedSequence(master).spawn(len(config))[k].spawn(runs)[j]; PCG64"
+  }
+}

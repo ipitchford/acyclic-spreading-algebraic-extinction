@@ -1,0 +1,53 @@
+{
+  "normalisation_time_scales_Tm": {
+    "10": 11264000000000.0,
+    "2": 24.0,
+    "4": 5120.0,
+    "6": 3483648.0
+  },
+  "original_ode_comparison": {
+    "atol": 1e-14,
+    "last_time": 20000.0,
+    "maximum_absolute_coordinate_error": 8.982259381e-13,
+    "maximum_relative_X_error": 3.691072073e-10,
+    "maximum_total_mass_error": 3.330669074e-16,
+    "method": "DOP853",
+    "minimum_numerical_coordinate": 2.142627657e-07,
+    "number_of_output_times": 302,
+    "rhs_evaluations": 1202,
+    "rtol": 2e-12
+  },
+  "perturbation_rates": {
+    "-1e-05": 0.001120351187,
+    "1e-05": 0.001120351187
+  },
+  "scope": "Finite numerical sanity checks; analytic theorems require the paper proofs.",
+  "status": "PASS",
+  "tail_sanity_check": [
+    {
+      "t": 100.0,
+      "t_to_power_3_over_2_x_div_sqrt_3_over_8": 0.6524545,
+      "x": 0.0003995451513
+    },
+    {
+      "t": 10000.0,
+      "t_to_power_3_over_2_x_div_sqrt_3_over_8": 0.9843691998,
+      "x": 6.028005645e-07
+    },
+    {
+      "t": 1000000.0,
+      "t_to_power_3_over_2_x_div_sqrt_3_over_8": 0.9987408131,
+      "x": 6.116013443e-10
+    },
+    {
+      "t": 100000000.0,
+      "t_to_power_3_over_2_x_div_sqrt_3_over_8": 0.9998771806,
+      "x": 6.122972245e-13
+    },
+    {
+      "t": 10000000000.0,
+      "t_to_power_3_over_2_x_div_sqrt_3_over_8": 0.9999877491,
+      "x": 6.123649336e-16
+    }
+  ]
+}
